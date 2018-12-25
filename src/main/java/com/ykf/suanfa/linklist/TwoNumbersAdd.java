@@ -1,7 +1,7 @@
 package com.ykf.suanfa.linklist;
 
 /**
- * @author yukf1111
+ * @author yukf11113334
  * @create 2018-10-22 11:36
  * @desc 输入：(2 -> 4 -> 3) + (5 -> 6 -> 4)
  * 输出：7 -> 0 -> 8
