@@ -7,8 +7,7 @@ import org.junit.jupiter.api.Test;
  * @create 2018-09-18 10:15
  * @desc 简单排序
  **/
-public class ChooseSort {
-
+public class SimpleSort {
     @Test
     public void test() {
         int[] arr = {5, 2, 3, 1, 6, 9, 5};
@@ -19,7 +18,8 @@ public class ChooseSort {
             //找出最小的元素
             for (int j = k + 1; j < arr.length; j++) {
                 if (arr[k] > arr[j]) {
-                    k = j;      //保存最小的位置
+                    //保存最小的位置
+                    k = j;
                 }
             }
             //交换位置
@@ -30,25 +30,6 @@ public class ChooseSort {
 
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + "-");
-        }
-    }
-
-    @Test
-    public void a() {
-        int[] arr = {3, 5, 2, 1, 3, 46, 87, 4};
-        for (int i = 0; i < arr.length - 1; i++) {
-            int k = i;
-            for (int j = k + 1; j < arr.length; j++) {
-                if (arr[k] > arr[j]) {
-                    k = j;
-                }
-            }
-            int temp = arr[i];
-            arr[i] = arr[k];
-            arr[k] = temp;
-        }
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + ",");
         }
     }
 }

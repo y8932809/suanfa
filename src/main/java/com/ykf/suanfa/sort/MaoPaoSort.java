@@ -26,5 +26,4 @@ public class MaoPaoSort {
             System.out.print(arr[i] + "-");
         }
     }
-
 }
