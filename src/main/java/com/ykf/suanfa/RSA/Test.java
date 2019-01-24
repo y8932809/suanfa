@@ -24,11 +24,11 @@ public class Test {
 //            map.put("payType", "11");
 
             //订单列表
-            map.put("vin", "");
-            map.put("pageindex", "1");
-            map.put("pagesize", "20");
-            map.put("time", "1547693514055");
-            map.put("userid", "14");
+//            map.put("vin", "");
+//            map.put("pageindex", "1");
+//            map.put("pagesize", "20");
+//            map.put("time", "1547693514055");
+//            map.put("userid", "14");
 
 //            map.put("attach", "");
 //            map.put("vin", "001");
@@ -39,9 +39,32 @@ public class Test {
 //            map.put("totalFee", "1");
 //            map.put("userid", "14");
 
+
+
+            //用户
+
+//            map.put("relationId", "4");
+//            map.put("time", "1548146266707");
+//            map.put("userid", "14");
+
+            map.put("attach", "");
+            map.put("goodsid", "33");
+            map.put("goodsname", "存储");
+            map.put("mchId", "132");
+            map.put("time", "1548148159119");
+            map.put("totalFee", "1");
+            map.put("userid", "14");
+            map.put("vin", "");
+
+
+
             MapUtil.sortMapByKey(map);
             String serverContent = MapUtil.concat(map);
             String a = RSA.encryptByPublicKey(serverContent, publicKey);
+
+//            byte[] arr = RSA.encryptByPublicKey(serverContent.getBytes("UTF-8"), publicKey);
+//            String a = new String(arr,"UTF-8");
+
             System.out.println(serverContent);
             System.out.println(a);
         } catch (Exception e) {

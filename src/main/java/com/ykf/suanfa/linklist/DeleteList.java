@@ -14,15 +14,12 @@ public class DeleteList {
         ListNode listNode2 = new ListNode(2, listNode3);
         ListNode listNode1 = new ListNode(1, listNode2);
         ListNode listNode0 = new ListNode(0, listNode1);
-
         ListNode current = listNode0;
         delete(listNode2);
-
         while (current != null) {
             System.out.println(current.val + ",");
             current = current.next;
         }
-
     }
 
     /**
@@ -37,6 +34,4 @@ public class DeleteList {
         listNode.val = listNode.next.val;
         listNode.next = listNode.next.next;
     }
-
-
 }
