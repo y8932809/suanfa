@@ -18,15 +18,19 @@ public class BinaryNodeTree {
     }
 
     public void insert(BinaryNodeTree root, int data) {
-        if (data > root.data) { //如果插入的节点大于跟节点
-            if (root.right == null) {          //如果右子树为空，就插入，如果不为空就再创建一个节点
-                root.right = new BinaryNodeTree(data); //就把插入的节点放在右边
+        if (data > root.data) {
+            //如果右子树为空，就插入，如果不为空就再创建一个节点
+            if (root.right == null) {
+                //就把插入的节点放在右边
+                root.right = new BinaryNodeTree(data);
             } else {
                 this.insert(root.right, data);
             }
-        } else {  //如果插入的节点小于根节点
-            if (root.left == null) { //如果左子树为空，就插入，如果不为空就再创建一个节点
-                root.left = new BinaryNodeTree(data); //就把插入的节点放在左边边
+        } else {
+            //如果左子树为空，就插入，如果不为空就再创建一个节点
+            if (root.left == null) {
+                //就把插入的节点放在左边边
+                root.left = new BinaryNodeTree(data);
             } else {
                 this.insert(root.left, data);
             }
