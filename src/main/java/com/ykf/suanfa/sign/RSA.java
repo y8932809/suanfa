@@ -1,5 +1,5 @@
 
-package com.ykf.suanfa.RSA;
+package com.ykf.suanfa.sign;
 
 import javax.crypto.Cipher;
 import java.io.ByteArrayOutputStream;

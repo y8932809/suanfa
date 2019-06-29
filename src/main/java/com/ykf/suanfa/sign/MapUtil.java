@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2016 Xiaokaxiu. All rights reserved.
  */
-package com.ykf.suanfa.RSA;
+package com.ykf.suanfa.sign;
 
 import net.sf.json.JSONObject;
 
