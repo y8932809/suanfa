@@ -1,4 +1,4 @@
-package com.ykf.suanfa.Array;
+package com.ykf.suanfa.array;
 
 /**
  * @author yukf

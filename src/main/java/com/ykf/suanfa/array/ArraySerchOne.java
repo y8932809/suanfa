@@ -1,4 +1,4 @@
-package com.ykf.suanfa.Array;
+package com.ykf.suanfa.array;
 
 /**
  * 描述: 每个元素都有两个，只有一个元素是唯一的，例如 1、1、2、2、3
