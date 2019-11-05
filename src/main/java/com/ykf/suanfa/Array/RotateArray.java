@@ -51,7 +51,7 @@ public class RotateArray {
      */
 
     public static void rotate1(int[] nums, int k) {
-//        k %= nums.length;
+        k %= nums.length;
 //        System.out.println("kkkk:" + k);
         reverse(nums, 0, nums.length - 1);
         reverse(nums, 0, k - 1);
