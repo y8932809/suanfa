@@ -8,7 +8,7 @@ package com.ykf.suanfa.array;
  * @author yukaifei
  * @create 2019-07-11 15:14
  */
-public class ArraySerchOne {
+public class ArraySearchOne {
 
     public static void main(String[] args) {
 
@@ -18,13 +18,11 @@ public class ArraySerchOne {
     }
 
     public static void search(int[] numbers) {
-
         int result = 0;
         for (int i = 0; i < numbers.length; i++) {
             System.out.println("header:" + result + "-" + numbers[i]);
             result = result ^ numbers[i];
             System.out.println(result);
         }
-
     }
 }

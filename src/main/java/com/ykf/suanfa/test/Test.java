@@ -11,7 +11,7 @@ import java.util.Date;
 public class Test {
     public static void main(String[] args) {
 //        Single.getInstance();
-        System.out.println(new Date(System.currentTimeMillis() + 119 * 60 * 1000));
+        System.out.println(1 << 30);
     }
 
 }
