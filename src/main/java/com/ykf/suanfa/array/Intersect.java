@@ -1,9 +1,6 @@
 package com.ykf.suanfa.array;
 
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * 描述:
@@ -57,6 +54,7 @@ public class Intersect {
         for (int i = 0; i < resultList.size(); i++) {
             resultArr[i] = resultList.get(i);
         }
+
         return resultArr;
     }
 
